@@ -431,7 +431,6 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
 
         return validatorMessage;
       },
-      //maxLength: widget.disableLengthCheck ? null : _selectedCountry.maxLength,
       maxLength: 15,
       keyboardType: widget.keyboardType,
       inputFormatters: widget.inputFormatters,
@@ -442,6 +441,8 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
       autovalidateMode: widget.autovalidateMode,
     );
   }
+
+  //maxLength: widget.disableLengthCheck ? null : _selectedCountry.maxLength,
 
   Container _buildFlagsButton() {
     return Container(
